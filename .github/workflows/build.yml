@@ -42,7 +42,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 algeboard_left.uf2
       - name: Archive (ALGEBOARD Left)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: algeboard_left.uf2
